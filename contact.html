@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Degustação Alentejana</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="Logotipo Degustação Alentejana" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre Nós</a></li>
+          <li><a href="services.html">Serviços</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Contacto -->
+    <header class="hero hero-contact">
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <h1>Contacto</h1>
+          <p>Fale connosco e planeie o seu próximo evento</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Formulário de Contacto -->
+    <section class="intro" style="background-color: #fff">
+      <div class="container">
+        <h2>Envie-nos uma mensagem</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="O seu nome" required />
+          <input type="email" placeholder="O seu email" required />
+          <input type="text" placeholder="Assunto" />
+          <textarea placeholder="Mensagem" rows="5" required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Informações de contacto -->
+    <section class="intro" style="background-color: #fff3e0">
+      <div class="container">
+        <h2>Outras formas de contacto</h2>
+        <p>
+          Email:
+          <a href="mailto:geral@degustacaoalentejana.pt"
+            >geral@degustacaoalentejana.pt</a
+          >
+        </p>
+        <p>Telefone: <a href="tel:+351912345678">+351 912 345 678</a></p>
+        <p>Localização: Cabeço de Vide, Alentejo</p>
+      </div>
+    </section>
+
+    <!-- Mapa Google (iframe fictício) -->
+    <section class="intro">
+      <div class="container">
+        <h2>Como chegar</h2>
+        <div
+          style="
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+          "
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!3m1!4b1!4m6!3m5!1s0xd1949ef4638efbb:0x43dcf6addb82770!8m2!3d38.6197873!4d-9.0953379!16s%2Fg%2F11f8bzx7h3?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border: 0; position: absolute; top: 0; left: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Degustação Alentejana. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
