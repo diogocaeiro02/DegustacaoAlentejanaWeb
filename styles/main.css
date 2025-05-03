@@ -522,7 +522,7 @@ p {
 }
 
 /* ===================== */
-/* FOOTER */
+/*         FOOTER        */
 /* ===================== */
 .footer {
   background-color: var(--bg-footer);
@@ -533,9 +533,80 @@ p {
   margin-top: 60px;
   border-top: 3px solid var(--accent-color);
 }
+/* ===================== */
+/*      BURGER MENU      */
+/* ===================== */
+
+/* Ícone hamburger */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  z-index: 200;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-dark);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Menu mobile */
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: var(--shadow-soft);
+  padding: 20px;
+  z-index: 99;
+}
+
+.nav-mobile.active {
+  display: flex;
+}
+
+.nav-mobile a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 7.5px);
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -7.5px);
+}
+
+/* Mostrar em mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav-mobile.active {
+    display: flex;
+  }
+}
 
 /* ===================== */
-/* RESPONSIVO */
+/*       RESPONSIVO      */
 /* ===================== */
 @media (max-width: 1245px) {
   .nav-container {
