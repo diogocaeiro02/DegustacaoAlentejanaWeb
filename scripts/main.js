@@ -29,3 +29,35 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.classList.toggle("active");
   });
 });
+
+ScrollReveal().reveal(".reveal", {
+  distance: "50px",
+  duration: 1000,
+  easing: "ease-out",
+  origin: "bottom",
+  interval: 200,
+});
+
+const lightbox = GLightbox({
+  selector: ".glightbox",
+});
+
+(function () {
+  emailjs.init("JcBCkpOghJmUrFPu0");
+})();
+
+document
+  .querySelector(".contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_hlite3l", "template_dn7hb34", this).then(
+      () => {
+        alert("Mensagem enviada com sucesso!");
+        this.reset();
+      },
+      (error) => {
+        alert("Erro ao enviar: " + error.text);
+      }
+    );
+  });

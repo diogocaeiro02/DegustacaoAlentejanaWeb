@@ -33,7 +33,7 @@
     <!-- Hero Contacto -->
     <header class="hero hero-contact">
       <div class="hero-overlay">
-        <div class="hero-text">
+        <div class="hero-text reveal">
           <h1>Contacto</h1>
           <p>Fale connosco e planeie o seu próximo evento</p>
         </div>
@@ -43,7 +43,7 @@
     <section class="contact-section">
       <div class="container contact-grid">
         <!-- Informação de contacto -->
-        <div class="contact-info">
+        <div class="contact-info reveal">
           <h2>Contacto Direto</h2>
           <p><strong>Localização:</strong> Seixal, Portugal</p>
           <p>
@@ -59,7 +59,7 @@
             mensagem!
           </p>
 
-          <div class="social-links">
+          <div class="social-links reveal">
             <a
               href="https://www.facebook.com/degustacaoalentejana"
               target="_blank"
@@ -86,15 +86,28 @@
 
         <!-- Formulário -->
         <form class="contact-form">
-          <input type="text" name="name" placeholder="O seu nome" required />
-          <input type="email" name="email" placeholder="O seu email" required />
+          <input
+            class="reveal"
+            type="text"
+            name="name"
+            placeholder="O seu nome"
+            required
+          />
+          <input
+            class="reveal"
+            type="email"
+            name="email"
+            placeholder="O seu email"
+            required
+          />
           <textarea
+            class="reveal"
             name="message"
             rows="5"
             placeholder="A sua mensagem"
             required
           ></textarea>
-          <button type="submit" class="btn">Enviar Mensagem</button>
+          <button type="submit" class="btn reveal">Enviar Mensagem</button>
         </form>
       </div>
     </section>
@@ -102,8 +115,9 @@
     <!-- Mapa Google (iframe fictício) -->
     <section class="map-section">
       <div class="container">
-        <h2>Onde Estamos</h2>
+        <h2 class="reveal">Onde Estamos</h2>
         <iframe
+          class="reveal"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.7224910830384!2d-9.0979075240981!3d38.61978727178268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1949ef4638efbb%3A0x43dcf6addb82770!2sDegusta%C3%A7%C3%A3o%20Alentejana%20(Quinta%20Mar%20de%20Rosas)!5e0!3m2!1spt-PT!2spt!4v1714677029000!5m2!1spt-PT!2spt"
           width="100%"
           height="350"
@@ -125,7 +139,7 @@
           <img src="assets/logo.png" alt="Logotipo Degustação Alentejana" />
           <p>Tradição, sabor e hospitalidade alentejana.</p>
         </div>
-    
+
         <div class="footer-nav">
           <h4>Links Rápidos</h4>
           <ul>
@@ -136,7 +150,7 @@
             <li><a href="contact.html">Contacto</a></li>
           </ul>
         </div>
-    
+
         <div class="footer-contact">
           <h4>Contacto</h4>
           <p>📍 Seixal, Portugal</p>
@@ -144,39 +158,23 @@
           <p>✉️ <a href="mailto:caeiroaj@gmail.com">caeiroaj@gmail.com</a></p>
           <div class="social-links">
             <a href="#"><img src="assets/icons/insta.jpg" alt="Instagram" /></a>
-            <a href="#"><img src="assets/icons/facebook.jpg" alt="Facebook" /></a>
-            <a href="#"><img src="assets/icons/whatsapp.jpg" alt="whatsapp" /></a>
+            <a href="#"
+              ><img src="assets/icons/facebook.jpg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/icons/whatsapp.jpg" alt="whatsapp"
+            /></a>
           </div>
         </div>
       </div>
-    
+
       <div class="footer-bottom">
         <p>&copy; 2025 Degustação Alentejana. Todos os direitos reservados.</p>
       </div>
     </footer>
 
-    <script src="./scripts/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("JcBCkpOghJmUrFPu0");
-      })();
-
-      document
-        .querySelector(".contact-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          emailjs.sendForm("service_hlite3l", "template_dn7hb34", this).then(
-            () => {
-              alert("Mensagem enviada com sucesso!");
-              this.reset();
-            },
-            (error) => {
-              alert("Erro ao enviar: " + error.text);
-            }
-          );
-        });
-    </script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
