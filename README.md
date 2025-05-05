@@ -8,7 +8,7 @@
 
 ## 📸 Preview
 
-![Website Preview](./assets/degusta-preview.png)
+![Website Preview](./degusta-preview.png)
 
 ---
 
