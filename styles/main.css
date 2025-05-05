@@ -325,8 +325,58 @@ p {
   outline: none;
 }
 
-.contact-form button {
-  align-self: flex-start;
+.contact-section {
+  background-color: var(--bg-light);
+  padding: 80px 0;
+}
+
+.contact-grid {
+  display: flex;
+  gap: var(--spacing);
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.map-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.contact-info p a {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.social-links img {
+  width: 38px;
+  height: 38px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 3px;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* sombra ao hover */
 }
 
 /* ===================== */

@@ -40,58 +40,82 @@
       </div>
     </header>
 
-    <!-- Formulário de Contacto -->
-    <section class="intro" style="background-color: #fff">
-      <div class="container">
-        <h2>Envie-nos uma mensagem</h2>
+    <section class="contact-section">
+      <div class="container contact-grid">
+        <!-- Informação de contacto -->
+        <div class="contact-info">
+          <h2>Contacto Direto</h2>
+          <p><strong>Localização:</strong> Seixal, Portugal</p>
+          <p>
+            <strong>Telefone:</strong>
+            <a href="tel:+351966581537">+351 966 581 537</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:caeiroaj@gmail.com">caeiroaj@gmail.com</a>
+          </p>
+          <p>
+            Tem uma questão ou deseja reservar um serviço? Envie-nos uma
+            mensagem!
+          </p>
+
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/degustacaoalentejana"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <img src="./assets/icons/facebook.jpg" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/degustacaoalentejana"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <img src="./assets/icons/insta.jpg" alt="Instagram" />
+            </a>
+            <a
+              href="https://wa.me/351912345678"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <img src="./assets/icons/whatsapp.jpg" alt="WhatsApp" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulário -->
         <form class="contact-form">
-          <input type="text" placeholder="O seu nome" required />
-          <input type="email" placeholder="O seu email" required />
-          <input type="text" placeholder="Assunto" />
-          <textarea placeholder="Mensagem" rows="5" required></textarea>
-          <button type="submit" class="btn">Enviar</button>
+          <input type="text" name="name" placeholder="O seu nome" required />
+          <input type="email" name="email" placeholder="O seu email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="A sua mensagem"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Enviar Mensagem</button>
         </form>
       </div>
     </section>
 
-    <!-- Informações de contacto -->
-    <section class="intro" style="background-color: #fff3e0">
-      <div class="container">
-        <h2>Outras formas de contacto</h2>
-        <p>
-          Email:
-          <a href="mailto:geral@degustacaoalentejana.pt"
-            >geral@degustacaoalentejana.pt</a
-          >
-        </p>
-        <p>Telefone: <a href="tel:+351912345678">+351 912 345 678</a></p>
-        <p>Localização: Cabeço de Vide, Alentejo</p>
-      </div>
-    </section>
-
     <!-- Mapa Google (iframe fictício) -->
-    <section class="intro">
+    <section class="map-section">
       <div class="container">
-        <h2>Como chegar</h2>
-        <div
+        <h2>Onde Estamos</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.7224910830384!2d-9.0979075240981!3d38.61978727178268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1949ef4638efbb%3A0x43dcf6addb82770!2sDegusta%C3%A7%C3%A3o%20Alentejana%20(Quinta%20Mar%20de%20Rosas)!5e0!3m2!1spt-PT!2spt!4v1714677029000!5m2!1spt-PT!2spt"
+          width="100%"
+          height="350"
           style="
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
+            border: 0;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-soft);
           "
-        >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!3m1!4b1!4m6!3m5!1s0xd1949ef4638efbb:0x43dcf6addb82770!8m2!3d38.6197873!4d-9.0953379!16s%2Fg%2F11f8bzx7h3?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            style="border: 0; position: absolute; top: 0; left: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
@@ -102,6 +126,27 @@
       </div>
     </footer>
 
-    <script src="./scripts/main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("JcBCkpOghJmUrFPu0");
+      })();
+
+      document
+        .querySelector(".contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          emailjs.sendForm("service_hlite3l", "template_dn7hb34", this).then(
+            () => {
+              alert("Mensagem enviada com sucesso!");
+              this.reset();
+            },
+            (error) => {
+              alert("Erro ao enviar: " + error.text);
+            }
+          );
+        });
+    </script>
   </body>
 </html>
