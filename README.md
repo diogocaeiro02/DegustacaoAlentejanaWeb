@@ -1,6 +1,6 @@
 # Degustação Alentejana
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%degustacaoalentejana.pt)](https://degustacaoalentejana.pt)
+[![Website](https://img.shields.io/website?url=https%3A%2Fdegustacaoalentejana.pt)](https://degustacaoalentejana.pt)
 [![GitHub last commit](https://img.shields.io/github/last-commit/diogocaeiro02/degustacaoalentejanaweb)](https://github.com/diogocaeiro02/degustacaoalentejanaweb)
 [![GitHub repo size](https://img.shields.io/github/repo-size/diogocaeiro02/degustacaoalentejanaweb)](https://github.com/diogocaeiro02/degustacaoalentejanaweb)
 
