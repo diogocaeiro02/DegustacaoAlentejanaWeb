@@ -25,7 +25,6 @@
 
 .hero-gallery {
   background: url("../assets/index/hero.webp") center/cover no-repeat;
-  height: 35vh;
 }
 
 .hero-contact {
@@ -46,26 +45,6 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.hero-overlay-gallery {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.6)
-  );
-  width: 100%;
-  height: 35vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.hero-overlay-gallery .hero-text {
-  padding-top: 70px;
 }
 
 .hero-text {
