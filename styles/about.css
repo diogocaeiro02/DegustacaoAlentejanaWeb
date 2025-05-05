@@ -4,21 +4,18 @@
 
 .about-images {
   display: flex;
-  flex-direction: row;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  margin-top: var(--spacing);
+  justify-content: center;
 }
 
 .about-images img {
-  width: 48%;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
   object-fit: cover;
-  max-width: 100%;
 }
 
 .timeline-section {
@@ -108,6 +105,11 @@
 @media (max-width: 768px) {
   .about-images {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .about-images img {
+    max-width: 100%;
   }
 
   .timeline::before {
