@@ -63,3 +63,24 @@
   background-color: var(--accent-color);
   margin: 20px auto;
 }
+
+.custom-shape-divider-bottom-1746466390 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1746466390 svg {
+  position: relative;
+  display: block;
+  width: calc(101% + 1.3px);
+  height: 91px;
+}
+
+.custom-shape-divider-bottom-1746466390 .shape-fill {
+  fill: #ffffff;
+}
