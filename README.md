@@ -1,6 +1,6 @@
 # Degustação Alentejana
 
-[![Website](https://img.shields.io/website?url=https%3A%2Fdegustacaoalentejana.pt)](https://degustacaoalentejana.pt)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fdegustacaoalentejana.pt)](https://degustacaoalentejana.pt)
 [![GitHub last commit](https://img.shields.io/github/last-commit/diogocaeiro02/degustacaoalentejanaweb)](https://github.com/diogocaeiro02/degustacaoalentejanaweb)
 [![GitHub repo size](https://img.shields.io/github/repo-size/diogocaeiro02/degustacaoalentejanaweb)](https://github.com/diogocaeiro02/degustacaoalentejanaweb)
 
@@ -8,7 +8,7 @@
 
 ## 📸 Preview
 
-![Website Preview](./degusta-preview.png)
+![Website Preview](./assets/degusta-preview.png)
 
 ---
 
@@ -33,9 +33,9 @@ This project is a static website built using:
 - Full-screen **Hero Section** with background image
 - Animated **scroll effects**
 - **Responsive design** for desktop, tablet, and mobile
-- **CTA button** leading to the contactscri
-- **Lazy loading** optimization (suggested improvement)
-- Clean **tab icon (favicon)** setup
+- **CTA button** leading to the contact section
+- **Lightbox2** integration for gallery
+- Clean **favicon** setup
 
 ---
 
