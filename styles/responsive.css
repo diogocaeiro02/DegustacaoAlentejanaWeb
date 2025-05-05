@@ -1,0 +1,40 @@
+/* ===================== */
+/*       RESPONSIVO      */
+/* ===================== */
+@media (max-width: 1245px) {
+  .nav-container {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .intro h2 {
+    font-size: 28px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .values {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+}

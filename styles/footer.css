@@ -1,0 +1,12 @@
+/* ===================== */
+/*         FOOTER        */
+/* ===================== */
+.footer {
+  background-color: var(--bg-footer);
+  color: #fff;
+  text-align: center;
+  padding: var(--spacing) 0;
+  font-size: var(--font-size-sm);
+  margin-top: 60px;
+  border-top: 3px solid var(--accent-color);
+}

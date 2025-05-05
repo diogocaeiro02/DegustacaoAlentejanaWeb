@@ -1,0 +1,40 @@
+/* ===================== */
+/* BOTÕES */
+/* ===================== */
+.btn,
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  transition: transform 0.2s ease, background var(--transition),
+    color var(--transition);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  letter-spacing: 0.5px;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+  transform: scale(1.05);
+}

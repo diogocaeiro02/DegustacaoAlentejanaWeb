@@ -1,0 +1,86 @@
+/* ===================== */
+/* HERO */
+/* ===================== */
+.hero {
+  height: 60vh;
+  background: url("../assets/hero.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-main {
+  height: 100vh;
+  background: url("../assets/index/hero.webp") center/cover no-repeat;
+}
+
+.hero-about {
+  background: url("../assets/about/hero.webp") center/cover no-repeat;
+}
+
+.hero-services {
+  background: url("../assets/services/hero.webp") center/cover no-repeat;
+}
+
+.hero-gallery {
+  background: url("../assets/index/hero.webp") center/cover no-repeat;
+  height: 35vh;
+}
+
+.hero-contact {
+  background: url("../assets/contact/hero.webp") center/cover no-repeat;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-overlay-gallery {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-overlay-gallery .hero-text {
+  padding-top: 70px;
+}
+
+.hero-text {
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  padding: var(--spacing);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  border-radius: var(--radius);
+  max-width: 90%;
+}
+
+.hero-line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+  margin: 20px auto;
+}

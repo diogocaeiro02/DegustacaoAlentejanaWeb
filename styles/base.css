@@ -1,0 +1,63 @@
+/* ===================== */
+/* VARIÁVEIS DE DESIGN */
+/* ===================== */
+:root {
+  --primary-color: rgb(127, 60, 26);
+  --primary-dark: rgba(94, 44, 19, 1);
+  --accent-color: #d8a35d;
+  --text-dark: #2c1a10;
+  --text-light: rgb(249, 246, 226);
+  --bg-light: #fdf7f1;
+  --bg-footer: #3e2723;
+  --bg-card: #fff8e1;
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radius: 12px;
+  --spacing: 24px;
+  --transition: 0.3s ease;
+  --font-size-lg: 38px;
+  --font-size-md: 18px;
+  --font-size-sm: 14px;
+}
+
+/* ===================== */
+/* BASE E TIPOGRAFIA */
+/* ===================== */
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+  font-size: var(--font-size-md);
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing);
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: var(--text-light);
+  margin-bottom: var(--spacing);
+  font-size: 52px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+}
+
+p {
+  margin-bottom: var(--spacing);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}

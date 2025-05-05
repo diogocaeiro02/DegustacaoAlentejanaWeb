@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeria | Degustação Alentejana</title>
-    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
+    <link rel="stylesheet" href="styles/main.css">
+
   </head>
   <body>
     <!-- NavBar -->
@@ -24,10 +30,9 @@
           <li><a href="index.html">Início</a></li>
           <li><a href="about.html">Sobre Nós</a></li>
           <li><a href="services.html">Serviços</a></li>
-          <li><a href="gallery.html"class="active">Galeria</a></li>
+          <li><a href="gallery.html" class="active">Galeria</a></li>
           <li><a href="contact.html">Contacto</a></li>
         </ul>
-        
       </div>
     </nav>
 
@@ -35,75 +40,122 @@
     <header class="hero hero-gallery">
       <div class="hero-overlay-gallery">
         <div class="hero-text">
-          <h1>Memórias em Imagem</h2>
+          <h1>Memórias em Imagem</h1>
           <p>
-            Cada fotografia capta um momento especial — uma refeição bem servida,
-            uma celebração vivida ou um sorriso partilhado. Explore alguns dos
-            nossos eventos inesquecíveis.
+            Cada fotografia capta um momento especial — uma refeição bem
+            servida, uma celebração vivida ou um sorriso partilhado. Explore
+            alguns dos nossos eventos inesquecíveis.
           </p>
         </div>
       </div>
     </header>
 
-
-
     <!-- Galeria -->
     <section class="gallery-grid-section">
       <div class="container gallery-grid">
         <!-- Imagens da galeria -->
-        <div class="gallery-item large">
-          <img src="assets/gallery/image-1.jpg" alt="Mesa decorada" />
-        </div>
         <div class="gallery-item">
-          <img src="assets/gallery/image-2.jpg" alt="Porco no espeto" />
+          <a href="assets/gallery/image-1.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-1.webp" alt="Mesa decorada" />
+          </a>
         </div>
+
         <div class="gallery-item">
-          <img src="assets/gallery/image-3.jpg" alt="Detalhe do prato" />
+          <a href="assets/gallery/image-2.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-2.webp" alt="Porco no espeto" />
+          </a>
         </div>
+
         <div class="gallery-item">
-          <img src="assets/gallery/image-4.jpg" alt="Equipe a servir" />
+          <a href="assets/gallery/image-3.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-3.webp" alt="Detalhe do prato" />
+          </a>
         </div>
+
         <div class="gallery-item">
-          <img src="assets/gallery/image-5.jpg" alt="Evento ao ar livre" />
+          <a href="assets/gallery/image-4.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-4.webp" alt="Equipe a servir" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-6.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-5.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-5.webp" alt="Evento ao ar livre" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-7.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-6.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-6.webp" alt="Evento ao ar livre" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-8.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-7.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-7.webp" alt="Evento ao ar livre" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-9.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-8.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-8.webp" alt="Evento ao ar livre" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-10.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-9.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-9.webp" alt="Evento ao ar livre" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-11.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-10.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-10.webp" alt="Evento ao ar livre" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-12.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-11.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-11.webp" alt="Evento ao ar livre" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-13.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-12.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-12.webp" alt="Evento ao ar livre" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-14.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-13.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-13.webp" alt="Evento ao ar livre" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-15.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-14.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-14.webp" alt="Prato tradicional" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-16.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-15.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-15.webp" alt="Prato tradicional" />
+          </a>
         </div>
-        <div class="gallery-item wide">
-          <img src="assets/gallery/image-17.jpg" alt="Prato tradicional" />
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-16.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-16.webp" alt="Prato tradicional" />
+          </a>
+        </div>
+
+        <div class="gallery-item">
+          <a href="assets/gallery/image-17.webp" class="glightbox" data-gallery="galeria">
+            <img src="assets/gallery/image-17.webp" alt="Prato tradicional" />
+          </a>
         </div>
       </div>
-    </section>
 
     <!-- Rodapé -->
     <footer class="footer">
@@ -111,8 +163,14 @@
         <p>&copy; 2025 Degustação Alentejana. Todos os direitos reservados.</p>
       </div>
     </footer>
-
     <script src="./scripts/main.js"></script>
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const lightbox = GLightbox({
+        selector: '.glightbox'
+      });
+    </script>
 
   </body>
 </html>
